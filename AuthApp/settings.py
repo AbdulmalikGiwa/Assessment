@@ -171,8 +171,8 @@ conn_max_age = heroku_config.get('CONN_MAX_AGE', 500)  # Used in django-heroku
 
 heroku_config['DATABASES'] = {
     'default': dj_database_url.parse(
-        config('DATABASE_URL'),
-        # os.environ['DATABASE_URL'],
+        # config('DATABASE_URL'),
+        os.environ['DATABASE_URL'],
         engine='django.db.backends.mysql',
         conn_max_age=conn_max_age,
 
