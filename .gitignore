@@ -1,0 +1,11 @@
+share/
+lib/
+lib64/
+db.sqlite3
+bin/
+.venv
+db.json
+__pycache__/
+users/__pycache__
+social_auth/__pycache__
+settings.ini
